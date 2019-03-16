@@ -1,12 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Routes from './pages/routes/routes';
 
-let Main = () => {
-  return (
-    <div>
-      Hello Hazelnut
-    </div>
-  );
+export default class Main extends React.Component {
+  constructor(public props) {
+      super(props);
+  }
+
+  render() {
+    return (
+      <Routes />
+    );
+  }
 }
 
 ReactDOM.render(<Main />, document.querySelector('#main'));

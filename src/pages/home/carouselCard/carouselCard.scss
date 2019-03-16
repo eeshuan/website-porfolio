@@ -1,0 +1,56 @@
+.carousel-card {
+    position: relative;
+
+    .carousel-image {
+        width: 100%;
+        object-fit: cover;
+        
+        @media screen and (max-width: 1280px) {
+            height: 600px;
+        }
+
+        @media screen and (min-width: 1280px) {
+            width: 100%;
+        }
+    }
+
+    .carousel-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        text-align: center;
+        border-top: 1px solid #989797;
+        border-bottom: 1px solid #989797;
+        background-color: #00000088;
+        height: 25%;
+
+        @media screen and (max-width: 600px) {
+            width: 100%;
+        }
+
+        @media screen and (min-width: 600px) {
+            width: 50%;
+        }
+
+        .carousel-title {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            color: #ffe400;
+            font-size: 40px;
+            width: 100%;
+            top: 25%;
+        }
+    
+        .carousel-subtitle {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            color: #fff;
+            font-size: 20px;
+            width: 100%;
+            bottom: 5%;
+        }
+    }
+}
