@@ -1,8 +1,8 @@
 import React from 'react';
 
-import './carouselCard.scss';
+import './imageCard.scss';
 
-export default class CarouselCard extends React.Component {
+export default class ImageCard extends React.Component {
     private defaultTitle: string = "Title Here";
     private defaultSubtitle: string = "Subtitle Here";
     private defaultImage: string = "";
@@ -13,16 +13,16 @@ export default class CarouselCard extends React.Component {
 
     render() {
         return (
-            <div className="carousel-card">
-                <img src={this.props.image || this.defaultImage} className="carousel-image"></img>
-                <div className="carousel-content">
-                    <div className="carousel-title">
-                        <div className="carousel-title-text">
+            <div className="image-card">
+                <img src={this.props.image || this.defaultImage} className="image-image"></img>
+                <div className="image-content">
+                    <div className="image-title">
+                        <div className="image-title-text">
                             {this.props.title || this.defaultTitle}
                         </div>
                     </div>
-                    <div className="carousel-subtitle">
-                        <div className="carousel-subtitle-text">
+                    <div className="image-subtitle">
+                        <div className="image-subtitle-text">
                             {this.props.subtitle || this.defaultSubtitle}
                         </div>
                     </div>
