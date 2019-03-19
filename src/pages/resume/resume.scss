@@ -1,0 +1,60 @@
+.resume {
+    .resume-container {
+        padding: 40px;
+    }
+
+    .container-even {
+        background-color: #ffffff;
+    }
+
+    .container-odd {
+        background-color: #eaeaea;
+    }
+
+    .resume-title {
+        font-size: 50px;
+        color: #820000;
+    }
+
+    .resume-content {
+        padding: 20px;
+
+        .skills-title {
+            font-size: 26px;
+        }
+
+        .experience-container {
+            padding: 50px 0px;
+
+            .experience-company {
+                font-size: 20px;
+                color: #28257d;
+            }
+    
+            .experience-position {
+                font-size: 16px;
+            }
+    
+            .experience-year {
+                font-size: 14px;
+            }
+        }
+
+        .education-container {
+            padding: 50px 0px;
+
+            .education-school {
+                font-size: 20px;
+                color: #28257d;
+            }
+    
+            .education-cert {
+                font-size: 16px;
+            }
+    
+            .education-year {
+                font-size: 14px;
+            }
+        }
+    }
+}
