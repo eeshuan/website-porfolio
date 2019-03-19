@@ -1,0 +1,87 @@
+.project {
+    .image {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .image-caption {
+        text-align: right;
+        margin-right: 20px;
+        font-size: 14px;
+        margin-bottom: 50px;
+    }
+
+    .title {
+        font-size: 60px;
+        padding: 20px;
+        color: #9a2121;
+    }
+
+    .link {
+        text-align: left;
+        margin-left: 30px;
+        font-size: 20px;    
+
+        a {
+            color: #3a61ad;
+            text-decoration: none;
+            &:hover, &:active {
+                color: #bfbfbf;
+            }
+        }
+    }
+
+    .paragraph {
+        font-size: 24px;
+
+        @media screen and (max-width: 600px){
+            padding: 30px;
+        }
+
+        @media screen and (min-width: 600px){
+            padding: 50px;
+        }
+    }
+}
+
+.back-to-portfolio-container {
+    position: absolute;
+    top: 90px;
+    left: 10px;
+
+    .back-to-portfolio-button {
+        text-decoration: none;
+        color: #000e38;
+        display: inline-flex;
+        align-items: center;
+        font-size: 24px;
+        
+        &:hover, &:active {
+            color: #bfbfbf;
+        }
+    }
+}
+
+.project-content {
+    padding-top: 100px;
+}
+
+.back-to-top-container {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0px;
+
+    .back-to-top-button {
+        background-color: #fff;
+
+        &:hover, &:active {
+            background-color: #bfbfbf;
+        }
+    }
+
+    .back-to-top-text {
+        color: #000e38;
+        text-transform: none;
+        font-size: 20px;
+    }
+}

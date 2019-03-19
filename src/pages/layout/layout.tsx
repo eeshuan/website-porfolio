@@ -10,6 +10,10 @@ export default class Layout extends React.Component {
         super(props);
     }
 
+    componentDidMount() {
+        window.scrollTo(0, 0);
+    }
+
     render() {
         return (
             <div className="layout">
