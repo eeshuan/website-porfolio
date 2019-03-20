@@ -6,13 +6,88 @@
         width: 100%;
     }
 
-    .home-intro {
-        text-align: center;
-        font-size: 30px;
+    .container-even {
+        background-color: #ffffff;
     }
 
-    .home-about {
+    .container-odd {
+        background-color: #eaeaea;
+    }
+
+    .home-title {
+        font-size: 40px;
+        color: #820000;
+        text-align: left;
+    }
+
+    .home-container {
+        padding: 50px;
+    }
+
+    .home-intro {
+        text-align: center;
+        font-size: 50px;
+        color: #000d56;
+    }
+
+    .home-subintro {
+        text-align: center;
         font-size: 20px;
-        margin: 50px;
+    }
+
+    .home-about-info {
+        padding: 50px 0px;
+        font-size: 20px;
+    }
+
+    .home-about-link {
+        text-align: center;
+    }
+
+    .home-portfolio-info {
+        padding: 50px 0px;
+        font-size: 20px;
+
+        .home-portfolio-pictures {
+            width: 98%;
+            height: 150px;
+        }
+    }
+
+    .home-portfolio-link {
+        text-align: center;
+    }
+
+    .home-resume-info {
+        padding: 50px 0px;
+        font-size: 20px;
+    }
+
+    .home-resume-link {
+        text-align: center;
+    }
+
+    .home-contact-info {
+        padding: 50px 0px;
+        font-size: 20px;
+    }
+
+    .home-contact-link {
+        text-align: center;
+    }
+
+    .link-button {
+        padding: 10px 20px;
+        font-size: 30px;
+        text-decoration: none;
+        background-color: #0000002e;
+        border-radius: 10px;
+        color: #fff;
+        border: 2px solid #404040;
+
+        &:hover, &:active {
+            background-color: #fff;
+            color: #000;
+        }
     }
 }

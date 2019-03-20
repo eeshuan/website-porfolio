@@ -1,8 +1,9 @@
 import React from 'react';
-import { Grid, Button, Fade } from '@material-ui/core';
+import { Grid } from '@material-ui/core';
+import { Link } from 'react-router-dom';
 
 import './entryCard.scss';
-import { Link } from 'react-router-dom';
+
 
 export default class EntryCard extends React.Component {
     private defaultTitle: string = "Title Here";

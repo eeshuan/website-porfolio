@@ -27,6 +27,8 @@ export let assetsMap = {
         about: {
             image: `${root}/pages/about/image.png`,
             profile: `${root}/pages/about/profile.jpeg`,
+            image1: `${root}/pages/about/pic1.jpeg`,
+            image2: `${root}/pages/about/pic2.jpeg`,
         },
         contact: {
             image: `${root}/pages/contact/image.png`,
