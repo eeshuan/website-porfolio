@@ -7,7 +7,7 @@
     "start": "node server.js",
     "watch": "webpack --config webpack.watch.config.js",
     "build": "webpack --config webpack.dev.config.js",
-    "build:prod": "webpack --config webpack.prod.config.js"
+    "build:prod": "webpack -p --config webpack.prod.config.js"
   },
   "repository": {
     "type": "git",

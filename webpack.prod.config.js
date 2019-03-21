@@ -5,7 +5,7 @@ let FileManagerPlugin = require(`filemanager-webpack-plugin`);
 let config = {
     mode: `production`,
     entry: `./src/index.tsx`,
-    devtool: 'inline-source-map',
+    devtool: '',
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: `bundle.js`
