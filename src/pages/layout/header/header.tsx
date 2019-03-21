@@ -1,20 +1,39 @@
 import React from 'react';
 import Button from '@material-ui/core/Button';
 import { Link } from 'react-router-dom';
-import { Drawer, Icon } from '@material-ui/core';
+import { Icon, SwipeableDrawer } from '@material-ui/core';
 
 import './header.scss';
 
 export default class Header extends React.Component {
     state = {
-        sidePanelOpen: false
+        sidePanelOpen: false,
+        home: "drawer-link-button",
+        about: "drawer-link-button",
+        portfolio: "drawer-link-button",
+        resume: "drawer-link-button",
+        contact: "drawer-link-button"
     }
     constructor(public props) {
         super(props);
     }
 
     openSidePanel() {
-        this.setState({sidePanelOpen: true});
+        let pages = ["", "about", "portfolio", "resume", "contact"];
+        let currentPage: string = window.location.hash.split("/")[1];
+        let newState = {
+            sidePanelOpen: true
+        }
+
+        for (let i=0; i<pages.length; i++) {
+            if (currentPage === pages[i]) {
+                newState[pages[i]] = "drawer-link-button active";
+            }
+            else {
+                newState[pages[i]] = "drawer-link-button";
+            }
+        }
+        this.setState(newState);
     }
 
     closeSidePanel() {
@@ -35,42 +54,49 @@ export default class Header extends React.Component {
                     <Button onClick={this.openSidePanel.bind(this)}>
                         <Icon className="fas fa-bars hamburger-icon"></Icon>
                     </Button>
-                    <Drawer
+                    <SwipeableDrawer
                         anchor="top"
                         open={this.state.sidePanelOpen}
+                        onOpen={this.openSidePanel.bind(this)}
                         onClose={this.closeSidePanel.bind(this)}
+                        classes={{paperAnchorTop: "drawer-container"}}
                     >
                         <div
                             tabIndex={0}
                             role="button"
+                            className={this.state[""]}
                         >
-                            <Link className="header-link-button" to="/">Home</Link>
+                            <Link className="drawer-link-text" to="/">Home</Link>
                         </div>
                         <div
                             tabIndex={1}
                             role="button"
+                            className={this.state.about}
                         >
-                            <Link className="header-link-button" to="/about">About</Link>
+                            <Link className="drawer-link-text" to="/about">About</Link>
                         </div>
                         <div
-                            tabIndex={0}
+                            tabIndex={2}
                             role="button"
+                            className={this.state.portfolio}
                         >
-                            <Link className="header-link-button" to="/portfolio">Portfolio</Link>
+                            <Link className="drawer-link-text" to="/portfolio">Portfolio</Link>
                         </div>
                         <div
-                            tabIndex={0}
+                            tabIndex={3}
                             role="button"
+                            className={this.state.resume}
                         >
-                            <Link className="header-link-button" to="/resume">Resume</Link>
+                            <Link className="drawer-link-text" to="/resume">Resume</Link>
                         </div>
                         <div
-                            tabIndex={0}
+                            tabIndex={4}
                             role="button"
+                            className={this.state.contact}
                         >
-                            <Link className="header-link-button" to="/contact">Contact</Link>
+                            <Link className="drawer-link-text" to="/contact">Contact</Link>
                         </div>
-                    </Drawer>
+                    </SwipeableDrawer>
                 </div>
             </div>
         );

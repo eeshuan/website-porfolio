@@ -20,7 +20,7 @@ export default class Footer extends React.Component {
                     <Link className="footer-link-button" to="/contact">Contact</Link>
                 </div>
                 <div className="footer-text">
-                    Designed by Shuan
+                    2019 | Designed by Shuan
                 </div>
             </div>
         );

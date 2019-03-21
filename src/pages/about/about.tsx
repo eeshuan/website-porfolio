@@ -2,12 +2,10 @@ import React from 'react';
 import Layout from '../layout/layout';
 import ImageCard from '../../components/imageCard/imageCard';
 import { aboutContent } from '../../pageContents/about/aboutContent';
-
-import './about.scss';
 import { Link } from 'react-router-dom';
-import { assetsMap } from '../../assets/assetsMap';
 import { Grid } from '@material-ui/core';
 
+import './about.scss';
 
 export default class About extends React.Component {
     constructor(public props) {
@@ -70,7 +68,7 @@ export default class About extends React.Component {
                                 {
                                     aboutContent.content.projects.pictures.map((data: any, index: number)=>{
                                         return (
-                                            <Grid xs={12} sm={4} item>
+                                            <Grid key={index} xs={12} sm={4} item>
                                                 <img src={data} className="pictures"></img>
                                             </Grid>
                                         );
