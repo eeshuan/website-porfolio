@@ -5,11 +5,12 @@ export let adventaleContent = {
     content: [
         {
             type: "paragraph",
-            data: "Adventale is a game project which i worked on with a few friends. We wanted to do something outside our comfort zone, and we embarked on this project together."
+            data: `Adventale is a game project which i am working on with a few friends. 
+            We wanted to do something more outside our daily jobs, and we decided to embark on this project together.`
         },
         {
             type: "paragraph",
-            data: "The project is still in its early stages"
+            data: "The project is still in its early stages of development."
         },
         {
             type: "image",

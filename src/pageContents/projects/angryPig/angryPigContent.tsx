@@ -6,15 +6,16 @@ export let angryPigContent = {
     content: [
         {
             type: "paragraph",
-            data: "I was introduced to #gameoff2018 hosted by GitHub from my colleague. It was a 30days game jam, in which participants have to create a brand new game based on the given theme."
+            data: `Angry Angry Pig started when I was introduced to #gameoff2018 (hosted by GitHub) from my colleague. 
+            It was a 30days game jam event, in which participants have to create a new game based on the given theme.`
         },
         {
             type: "paragraph",
-            data: "The theme for 2018 was \"Hybrid\". I worked with one artist to come up with a simple arcade game which uses the concept of the wall breaking game."
+            data: "The theme for 2018 was \"Hybrid\". I worked with an artist to come up with a simple arcade game."
         },
         {
             type: "paragraph",
-            data: "You can check out some of the game screen shots below."
+            data: "You can check out some screenshots of the game below."
         },
         {
             type: "image",
@@ -38,11 +39,12 @@ export let angryPigContent = {
         },
         {
             type: "paragraph",
-            data: "We achieved 57th position out of over 300 entries."
+            data: "We achieved 57th position out of over 300 entries submitted."
         },
         {
             type: "paragraph",
-            data: "It was a great achievement, seeing people playing my game and leaving feedbacks in the comments."
+            data: `It was a wonderful experience to see people playing my game and then leave feedbacks in the game page. 
+                    I truly felt that it was a great personal achievement.`
         },
     ]
 }

@@ -38,10 +38,17 @@
                 position: absolute;
                 text-align: center;
                 width: 100%;
-                font-size: 50px;
                 top: 40%;
                 left: 50%;
                 transform: translateX(-50%) translateY(-50%);
+
+                @media screen and (max-width: 600px){
+                    font-size: 40px;
+                }
+        
+                @media screen and (min-width: 600px){
+                    font-size: 50px;
+                }
             }
         }
 
@@ -54,12 +61,19 @@
             border: 1px solid #fff;
             color: #fff;
             padding: 10px 30px;
-            font-size: 30px;
             font-family: 'Overlock', cursive;
             text-transform: none;
             text-decoration: none;
             visibility: hidden;
             transition: visibility 0ms 50ms;
+
+            @media screen and (max-width: 600px){
+                font-size: 20px;
+            }
+    
+            @media screen and (min-width: 600px){
+                font-size: 30px;
+            }
         }
     }
 }

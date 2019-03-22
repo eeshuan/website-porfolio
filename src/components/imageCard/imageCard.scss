@@ -1,8 +1,5 @@
 .image-card {
     position: relative;
-    padding: 0 !important;
-    text-transform: none !important;
-    font-family: 'Overlock', cursive !important;
 
     .image-image {
         width: 100%;
@@ -27,6 +24,10 @@
         border-bottom: 1px solid #989797;
         background-color: #00000088;
         height: 25%;
+
+        padding: 0 !important;
+        text-transform: none !important;
+        font-family: 'Overlock', cursive !important;
 
         @media screen and (max-width: 600px) {
             width: 100%;

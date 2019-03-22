@@ -16,16 +16,24 @@ export default class ImageCard extends React.Component {
         if (this.props.link != null) {
             window.location.href = `#${this.props.link}`
         }
+
+        else {
+            window.scrollTo({
+                top: 600,
+                left: 0,
+                behavior: 'smooth'
+            });
+        }
     }
 
     render() {
         return (
-            <Button 
-                onClick={this.goToLink.bind(this)}
-                classes={{root: "image-card"}}
-            >
+            <div className="image-card">
                 <img src={this.props.image || this.defaultImage} className="image-image"></img>
-                <div className="image-content">
+                <Button 
+                    onClick={this.goToLink.bind(this)}
+                    classes={{root: "image-content"}}
+                >
                     <div className="image-title">
                         <div className="image-title-text">
                             {this.props.title || this.defaultTitle}
@@ -36,8 +44,8 @@ export default class ImageCard extends React.Component {
                             {this.props.subtitle || this.defaultSubtitle}
                         </div>
                     </div>
-                </div>
-            </Button>
+                </Button>
+            </div>
         );
     }
 }

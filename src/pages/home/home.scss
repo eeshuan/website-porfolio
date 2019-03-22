@@ -11,7 +11,7 @@
     }
 
     .container-odd {
-        background-color: #eaeaea;
+        background-color: #eaeaea88;
     }
 
     .home-title {
@@ -43,17 +43,30 @@
     }
 
     .home-about-info {
-        padding: 50px 0px;
         font-size: 20px;
+        @media screen and (max-width: 600px) {
+            padding: 20px 0px;
+        }
+
+        @media screen and (min-width: 600px) {
+            padding: 50px 0px;
+        }
     }
 
     .home-about-link {
         text-align: center;
+        margin-top: 20px;
     }
 
     .home-portfolio-info {
-        padding: 50px 0px;
         font-size: 20px;
+        @media screen and (max-width: 600px) {
+            padding: 20px 0px;
+        }
+
+        @media screen and (min-width: 600px) {
+            padding: 50px 0px;
+        }
 
         .home-portfolio-pictures {
             width: 98%;
@@ -63,24 +76,39 @@
 
     .home-portfolio-link {
         text-align: center;
+        margin-top: 20px;
     }
 
     .home-resume-info {
-        padding: 50px 0px;
         font-size: 20px;
+        @media screen and (max-width: 600px) {
+            padding: 20px 0px;
+        }
+
+        @media screen and (min-width: 600px) {
+            padding: 50px 0px;
+        }
     }
 
     .home-resume-link {
         text-align: center;
+        margin-top: 20px;
     }
 
     .home-contact-info {
-        padding: 50px 0px;
         font-size: 20px;
+        @media screen and (max-width: 600px) {
+            padding: 20px 0px;
+        }
+
+        @media screen and (min-width: 600px) {
+            padding: 50px 0px;
+        }
     }
 
     .home-contact-link {
         text-align: center;
+        margin-top: 20px;
     }
 
     .link-button {

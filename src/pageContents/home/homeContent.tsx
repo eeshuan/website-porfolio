@@ -4,7 +4,7 @@ export let homeContent = {
     carousel: [
         {
             title: "Hi! I am Shuan",
-            subtitle: "An aspiring web and games developer",
+            subtitle: "An aspiring developer",
             image: assetsMap.pages.home.image,
             link: "/about"
         },
@@ -28,11 +28,11 @@ export let homeContent = {
         }
     ],
     intro: "I am Shuan!",
-    subintro: "I am an aspiring web and games developer!",
+    subintro: "I am a web and games developer!",
     about: {
         title: "About me",
         content: [
-            "I am a game-loving software developer with a passion in web development and games.",
+            "I am a game-loving software developer with a passion in web and games development.",
             "Get to know me more!"
         ],
         link: {
@@ -67,7 +67,7 @@ export let homeContent = {
     resume: {
         title: "What I can do",
         content: [
-            "Take a look deeper to know what I can do"
+            "Take a closer look at what I can do"
         ],
         link: {
             text: "View resume",
@@ -75,9 +75,9 @@ export let homeContent = {
         }
     },
     contact: {
-        title: "Contact me today!",
+        title: "Contact",
         content: [
-            "I am always interested to learn more."
+            "I am always interested in opportunities to learn more."
         ],
         link: {
             text: "Contact Me",

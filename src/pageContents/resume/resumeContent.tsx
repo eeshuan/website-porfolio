@@ -34,7 +34,7 @@ export let resumeContent = {
             details: [
                 "Led the team in the creation of mini games for the company",
                 "In charge of maximizing the UI/UX experience for the products",
-                "In charge of the software testing for the products",
+                "Contributed to the software testing for the company's softwares",
                 "Responsible for managing all live products of the project"
             ]
         },
@@ -44,8 +44,8 @@ export let resumeContent = {
             duration: "December 2017 - April 2018",
             details: [
                 "Helped the team to create mini games for the company",
-                "Helped out in maximizing the UI/UX experience of softwares",
-                "Helped out engaging in software testing"
+                "Assisted in the company to maximize the UI/UX experience of the company's softwares",
+                "Supported in software testing processes of the company"
             ]
         },
         {
@@ -54,9 +54,9 @@ export let resumeContent = {
             duration: "May 2017 - October 2017",
             details: [
                 "In charge of all IT-related events of the company",
-                "Learnt how to manage  business servers and networks",
-                "Was in charge of setting up an off-site database for offline data entry",
-                "Learnt and helped in the company’s web and software development"
+                "Learnt how to manage business servers and networks",
+                "Set up off-site databases for offline data entry for major events such as Spartan Race and NDP Ticket Collections",
+                "Assisted in the company’s web and software development"
             ]
         },
         {
@@ -64,8 +64,7 @@ export let resumeContent = {
             position: "Part-time Service Staff",
             duration: "July 2016 - January 2017",
             details: [
-                "Worked as a service staff (Waiter)",
-                "Learnt how to handle difficult customers with professionalism"
+                "Worked as a service staff which and learnt how to handle difficult customers with professionalism"
             ]
         },
         {
@@ -92,8 +91,8 @@ export let resumeContent = {
             cert: "Bachelor of Computing (Computer Science)",
             duration: "August 2014 - June 2018",
             details: [
-                "Graduated from the School of Computing with Merit",
-                "Obtained high distinction in all game development subjects",
+                "Graduated from the School of Computing",
+                "Obtained distinctions in all web and game development related subjects",
                 "Participated in NUS STePS events in 2018 and won 2nd place",
                 "Participated in NUS Orbital Project in 2015"
             ]
@@ -104,7 +103,7 @@ export let resumeContent = {
             duration: "January 2010 - November 2011",
             details: [
                 "Graduated with 85 rank points",
-                "Obtained distinction in all Sciences and Maths subject fields"
+                "Obtained distinctions in all Sciences and Maths subject fields"
             ]
         }
     ]

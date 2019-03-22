@@ -24,22 +24,22 @@ export let assetsMap = {
     },
     pages: {
         home: {
-            image:`${root}/pages/home/image.png`,
+            image:`${root}/pages/home/image.jpeg`,
         },
         about: {
-            image: `${root}/pages/about/image.png`,
+            image: `${root}/pages/about/image.jpeg`,
             profile: `${root}/pages/about/profile.jpeg`,
             image1: `${root}/pages/about/pic1.jpeg`,
             image2: `${root}/pages/about/pic2.jpeg`,
         },
         portfolio: {
-            image: `${root}/pages/portfolio/image.png`,
+            image: `${root}/purgastory/pic1.jpg`,
         },
         resume: {
-            image: `${root}/pages/resume/image.png`,
+            image: `${root}/adventale/pic1.jpeg`
         },
         contact: {
-            image: `${root}/pages/contact/image.png`,
+            image: `${root}/pages/contact/image.jpeg`,
         }
     }
 }

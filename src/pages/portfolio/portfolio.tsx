@@ -22,7 +22,10 @@ export default class Portfolio extends React.Component {
                         image={portfolioContent.banner.image}
                     />
                     <div className="portfolio-title">
-                        Projects
+                        My Projects
+                    </div>
+                    <div className="portfolio-intro">
+                        {portfolioContent.intro}
                     </div>
                     <Grid container alignItems="center" justify="flex-start">
                         {

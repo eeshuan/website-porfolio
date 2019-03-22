@@ -10,36 +10,51 @@ export let aboutContent = {
         about: {
             title: "Here are some things about me",
             info: [
-                "I am a hardcore Magic: The Gathering player. I do sailing and windsurfing. I can't draw, but I love designing. I love listening to music."
+                `I am a hardcore Magic: The Gathering player. I do sailing and windsurfing. I can't draw, but I love designing. I love listening to music.`
             ]
         },
         who: {
-            title: "Who I am",
+            title: "Who am I",
+            profilePic: assetsMap.pages.about.profile,
             info: [
-                "My path as a developer exposed me to many different areas in both Front-End and Back-End. I enjoy challenging myself to gain more knowledge, and be contantly upgrading myself.",
-                "However, my path have not been the kindest to me yet. I faced many challenges in many areas, but had always worked hard to overcome them. Little by little, it changed me for the better for each challenge i cleared.",
-                "Bottom line: I love what I am doing now and I am fully prepared to face any challenges that I might face in the future."
+                `My path as a developer had exposed me to many different areas in both Front-End and Back-End programming. 
+                I enjoyed challenging myself, and have been always contantly upgrading myself with new knowledge.`,
+                `However, this path have not been the kindest to me, and I had faced many obstacles during my learning phases. 
+                However, I persisted on to face these challenges, and little by little, it made me a more knowledgeable person for every obstacle i overcame.`,
+                `But to keep it simple, I love what I am doing now and I am comitted to face any challenges that I might encounter in the future.`
             ]
         },
         projects: {
             title: "Developing my own projects",
             info: [
-                "My first ever game project was Purgastory. It was a defining moment for me as I grew addicted to developing my own projects. Seeing my ideas come to life always excites me greatly. t has been over a year since, and I continued to work tirelessly on my projects, no matter what the scale is. There was never a moment to waste to produce the things I love."
+                `The first game project I developed was Purgastory. It was a defining project for me as I became interested to do my own projects right after. 
+                Watching my ideas and designs come to life really excites me, and it keeps me motivated to do even more.`,
+                `Since then, I continued to work tirelessly on my projects, no matter what the project scale is. 
+                There was never a moment to waste to create the things I love.`
             ],
             pictures: [
+                assetsMap.purgastory.image3,
                 assetsMap.pages.about.image1,
-                assetsMap.pages.about.image2,
-                assetsMap.purgastory.image3
+                assetsMap.pages.about.image2
             ],
             info2: [
-                "You can take a look at my portfolio to see the projects I had worked on before."
-            ]
+                "Take a look at my portfolio to see all my projects."
+            ],
+            link: {
+                text: "View Portfolio",
+                path: "/portfolio"
+            }
         },
         resume: {
-            title: "More about me",
+            title: "What I can do",
             info: [
+                `I have picked up many relevant skills and experiences from my jobs and studies.`,
                 "Take a look deeper at what I have done in my development career and what I can do for you."
-            ]
+            ],
+            link: {
+                text: "View Resume",
+                path: "/resume"
+            }
         }
     }
 }

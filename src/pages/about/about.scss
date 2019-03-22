@@ -4,7 +4,7 @@
     }
 
     .container-odd {
-        background-color: #eaeaea;
+        background-color: #eaeaea88;
     }
 
     .about-title {
@@ -42,13 +42,18 @@
     }
 
     .who-info {
-        padding: 50px 0px;
         font-size: 20px;
+        padding: 20px 0px;
+    }
+
+    .profile-pic {
+        width: 80%;
+        margin-left: 10%;         
     }
 
     .projects-info {
-        padding: 50px 0px;
         font-size: 20px;
+        padding: 20px 0px;
     }
 
     .projects-pictures {
@@ -65,15 +70,17 @@
 
     .projects-link {
         text-align: center;
+        margin-top: 20px;
     }
 
     .resume-info {
-        padding: 50px 0px;
         font-size: 20px;
+        padding: 20px 0px;
     }
 
     .resume-link {
         text-align: center;
+        margin-top: 20px;
     }
 
     .link-button {

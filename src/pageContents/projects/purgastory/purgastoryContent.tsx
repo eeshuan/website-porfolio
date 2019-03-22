@@ -6,15 +6,16 @@ export let purgastoryContent = {
     content: [
         {
             type: "paragraph",
-            data: "Purgastory was the first game I had created in my game development career. It started as a project in school, and it soon fueled my interest in game development."
+            data: `Purgastory was the first game I had developed as a project in school. I worked with a small team tirelessly for a year to create this game.
+                This game is also one of the main reasons that i started to have interest in game development.`
         },
         {
             type: "paragraph",
-            data: "The game was developed in Unreal Engine 4, and was a 3D multiplayer \"Seekers vs Hiders\" game. The game took about a year to be developed."
+            data: "The game was developed in Unreal Engine 4, and was a 3D multiplayer \"Seekers vs Hiders\" game."
         },
         {
             type: "paragraph",
-            data: "You can check out some of the game screen shots below."
+            data: "You can check out some screenshots of the game below."
         },
         {
             type: "image",
@@ -39,11 +40,11 @@ export let purgastoryContent = {
         {
             type: "image",
             src: assetsMap.purgastory.image5,
-            caption: "Blood moon map"
+            caption: "Blood Moon map"
         },
         {
             type: "paragraph",
-            data: "We won 2nd place at the NUS STePS competition."
+            data: "We submitted this project to the NUS STePS competition and we achieved 2nd place!"
         },
         {
             type: "image",
@@ -52,7 +53,8 @@ export let purgastoryContent = {
         },
         {
             type: "paragraph",
-            data: "It was the start of my interest in game development. I continued to engage myself in game development in one way or another. Hopefully am able to create a similar game, but on a larger scale in the future."
+            data: `This was the start of my career in game development and I continued to engage myself in various game projects in one way or another. 
+                    Hopefully I am able to achieve my dream of creating a game on a large scale in the future.`
         },
     ]
 }

@@ -40,15 +40,22 @@ export default class About extends React.Component {
                             <div className="about-title">
                                 {aboutContent.content.who.title}
                             </div>
-                            {
-                                aboutContent.content.who.info.map((data: any, index: number)=>{
-                                    return (
-                                        <div key={index} className="who-info">
-                                            {data}
-                                        </div>
-                                    );
-                                })
-                            }
+                            <Grid container alignItems="center" justify="center" style={{marginTop: "20px"}}>
+                                <Grid xs={12} sm={4} item>
+                                    <img src={aboutContent.content.who.profilePic} className="profile-pic"></img>
+                                </Grid>
+                                <Grid xs={12} sm={8} item>
+                                {
+                                    aboutContent.content.who.info.map((data: any, index: number)=>{
+                                        return (
+                                            <div key={index} className="who-info">
+                                                {data}
+                                            </div>
+                                        );
+                                    })
+                                }
+                                </Grid>
+                            </Grid>
                         </div>
                         <div className="about-container container-even">
                             <div className="about-title">
@@ -86,7 +93,7 @@ export default class About extends React.Component {
                                 })
                             }
                             <div className="projects-link">
-                                <Link className="link-button" to="/portfolio">View Portfolio</Link>
+                                <Link className="link-button" to={aboutContent.content.projects.link.path}>{aboutContent.content.projects.link.text}</Link>
                             </div>
                         </div>
                         <div className="about-container container-odd">
@@ -103,7 +110,7 @@ export default class About extends React.Component {
                                 })
                             }
                             <div className="resume-link">
-                                <Link className="link-button" to="/resume">View Resume</Link>
+                                <Link className="link-button" to={aboutContent.content.resume.link.path}>{aboutContent.content.resume.link.text}</Link>
                             </div>
                         </div>
                     </div>
