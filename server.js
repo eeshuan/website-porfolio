@@ -2,7 +2,7 @@ let express = require('express');
 let app = express();
 let path = require("path");
 
-let port = 8000;
+let port = 80;
 
 app.use(express.static(path.join(process.cwd(), 'dist')));
 
