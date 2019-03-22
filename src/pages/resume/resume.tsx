@@ -1,7 +1,6 @@
 import React from 'react';
 import Layout from '../layout/layout';
 import ImageCard from '../../components/imageCard/imageCard';
-import { assetsMap } from '../../assets/assetsMap';
 import { Grid } from '@material-ui/core';
 import { resumeContent } from '../../pageContents/resume/resumeContent';
 
@@ -17,9 +16,9 @@ export default class Resume extends React.Component {
             <Layout>
                 <div className="resume">
                     <ImageCard 
-                        title="My resume"
-                        subtitle="Reume here!"
-                        image={assetsMap.pages.portfolio}
+                        title={resumeContent.banner.title}
+                        subtitle={resumeContent.banner.subtitle}
+                        image={resumeContent.banner.image}
                     />
                     <div className="resume-container container-even">
                         <div className="resume-title">

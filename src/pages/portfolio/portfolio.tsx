@@ -1,9 +1,9 @@
 import React from 'react';
 import Layout from '../layout/layout';
-import { assetsMap } from '../../assets/assetsMap';
 import ImageCard from '../../components/imageCard/imageCard';
 import EntryCard from './entryCard/entryCard';
 import { Grid } from '@material-ui/core';
+import { portfolioContent } from '../../pageContents/portfolio/portfolioContent';
 
 import './portfolio.scss';
 
@@ -17,29 +17,26 @@ export default class Portfolio extends React.Component {
             <Layout>
                 <div className="portfolio">
                     <ImageCard 
-                        title="Portfolio"
-                        subtitle="My awesome works"
-                        image={assetsMap.pages.portfolio}
+                        title={portfolioContent.banner.title}
+                        subtitle={portfolioContent.banner.subtitle}
+                        image={portfolioContent.banner.image}
                     />
                     <div className="portfolio-title">
-                        Works
+                        Projects
                     </div>
                     <Grid container alignItems="center" justify="flex-start">
-                        <EntryCard 
-                            path="/adventale"
-                            title="Adventale"
-                            image={assetsMap.adventale.background}
-                        />
-                        <EntryCard 
-                            path="/purgastory"
-                            title="Purgastory"
-                            image={assetsMap.purgastory.background}
-                        />
-                        <EntryCard 
-                            path="/angrypig"
-                            title="Angry Pig"
-                            image={assetsMap.angryPig.background}
-                        />
+                        {
+                            portfolioContent.projects.map((data: any, index: number)=>{
+                                return (
+                                    <EntryCard
+                                        key={index}
+                                        path={data.path}
+                                        title={data.title}
+                                        image={data.image}
+                                    />
+                                );
+                            })
+                        }
                     </Grid>
                 </div>
             </Layout>

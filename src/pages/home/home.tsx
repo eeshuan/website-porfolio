@@ -1,14 +1,13 @@
 import React from 'react';
 import Layout from '../layout/layout';
 import Slider from 'react-slick';
-import { assetsMap } from '../../assets/assetsMap';
 import ImageCard from '../../components/imageCard/imageCard';
 import { homeContent } from '../../pageContents/home/homeContent';
-
-import './home.scss';
 import { Link } from 'react-router-dom';
 import { Grid } from '@material-ui/core';
 import ProjectCard from './projectCard/projectCard';
+
+import './home.scss';
 
 export default class Home extends React.Component {
     private sliderSettings: {[key: string]: any};
@@ -40,6 +39,7 @@ export default class Home extends React.Component {
                                             title={data.title || "Missing Title"}
                                             subtitle={data.subtitle || "Missing Title"}
                                             image={data.image || ""}
+                                            link={data.link || "/"}
                                         />
                                     );
                                 })
@@ -49,77 +49,88 @@ export default class Home extends React.Component {
                     <div className="content">
                         <div className="home-container container-even">
                             <div className="home-intro">
-                                I am Shuan!
+                                {homeContent.intro}
                             </div>
                             <div className="home-subintro">
-                                <i>I am an aspiring web and games developer!</i>
+                                <i>{homeContent.subintro}</i>
                             </div>
                         </div>
                         <div className="home-container container-odd">
                             <div className="home-title">
-                                About me
+                                {homeContent.about.title}
                             </div>
-                            <div className="home-about-info">
-                                I am a game-loving software developer with a passion in web development and games.
-                            </div>
-                            <div className="home-about-info">
-                                Get to know me more!
-                            </div>
+                            {
+                                homeContent.about.content.map((data: any, index: number)=>{
+                                    return (
+                                        <div key={index} className="home-about-info">
+                                            {data}
+                                        </div>
+                                    );
+                                })
+                            }
                             <div className="home-about-link">
-                                <Link className="link-button" to="/about">Learn more</Link>
+                                <Link className="link-button" to={homeContent.about.link.path}>{homeContent.about.link.text}</Link>
                             </div>
                         </div>
                         <div className="home-container container-even">
                             <div className="home-title">
-                                My personal works
+                                {homeContent.portfolio.title}
                             </div>
                             <div className="home-portfolio-info">
                                 <Grid container alignItems="center" justify="flex-start">
-                                    <ProjectCard 
-                                        path="/adventale"
-                                        title="Adventale"
-                                        image={assetsMap.adventale.background}
-                                    />
-                                    <ProjectCard 
-                                        path="/purgastory"
-                                        title="Purgastory"
-                                        image={assetsMap.purgastory.background}
-                                    />
-                                    <ProjectCard 
-                                        path="/angrypig"
-                                        title="Angry Pig"
-                                        image={assetsMap.angryPig.background}
-                                    />
+                                    {
+                                        homeContent.portfolio.projects.map((data: any, index: number)=>{
+                                            return (
+                                                <ProjectCard 
+                                                    key={index}
+                                                    path={data.path}
+                                                    title={data.title}
+                                                    image={data.image}
+                                                />
+                                            );
+                                        })   
+                                    }
                                 </Grid>
                             </div>
                             <div className="home-portfolio-link">
-                                <Link className="link-button" to="/portfolio">More projects</Link>
+                                <Link className="link-button" to={homeContent.portfolio.link.path}>{homeContent.portfolio.link.text}</Link>
                             </div>
                         </div>
                         <div className="home-container container-odd">
                             <div className="home-title">
-                                What I can do
+                                {homeContent.resume.title}
                             </div>
-                            <div className="home-resume-info">
-                                Take a look deeper to know what I can do
-                            </div>
+                            {
+                                homeContent.resume.content.map((data: any, index: number)=>{
+                                    return (
+                                        <div key={index} className="home-resume-info">
+                                            {data}
+                                        </div>
+                                    );
+                                })
+                            }
                             <div className="home-resume-link">
-                                <Link className="link-button" to="/resume">Resume</Link>
+                                <Link className="link-button" to={homeContent.resume.link.path}>{homeContent.resume.link.text}</Link>
                             </div>
                         </div>
                         <div className="home-container container-even">
                             <div className="home-title">
-                                Contact me today!
+                                {homeContent.contact.title}
                             </div>
-                            <div className="home-contact-info">
-                                I am always interested to learn more.
-                            </div>
+                            {
+                                homeContent.contact.content.map((data: any, index: number)=>{
+                                    return (
+                                        <div key={index} className="home-contact-info">
+                                            {data}
+                                        </div>
+                                    );
+                                })
+                            }
                             <div className="home-contact-link">
-                                <Link className="link-button" to="/contact">Contact me</Link>
+                                <Link className="link-button" to={homeContent.contact.link.path}>{homeContent.contact.link.text}</Link>
                             </div>
                         </div>
                     </div>
-                    
                 </div>
             </Layout>
         );

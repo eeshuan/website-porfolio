@@ -4,9 +4,8 @@ export let aboutContent = {
     banner: {
         title: "About me",
         subtitle: "Get to know me more!",
-        image: assetsMap.pages.portfolio
+        image: assetsMap.pages.about.image
     },
-    introImage: assetsMap.pages.about.profile,
     content: {
         about: {
             title: "Here are some things about me",

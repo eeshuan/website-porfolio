@@ -14,7 +14,14 @@
     }
 
     .about-container {
-        padding: 50px;
+        @media screen and (max-width: 600px) {
+            padding: 14px;
+            padding-bottom: 30px;
+        }
+
+        @media screen and (min-width: 600px) {
+            padding: 50px;
+        }
     }
 
     .favourites-title {

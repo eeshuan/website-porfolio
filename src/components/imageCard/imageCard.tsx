@@ -1,4 +1,5 @@
 import React from 'react';
+import { Button } from '@material-ui/core';
 
 import './imageCard.scss';
 
@@ -11,9 +12,18 @@ export default class ImageCard extends React.Component {
         super(props);
     }
 
+    goToLink(): void {
+        if (this.props.link != null) {
+            window.location.href = `#${this.props.link}`
+        }
+    }
+
     render() {
         return (
-            <div className="image-card">
+            <Button 
+                onClick={this.goToLink.bind(this)}
+                classes={{root: "image-card"}}
+            >
                 <img src={this.props.image || this.defaultImage} className="image-image"></img>
                 <div className="image-content">
                     <div className="image-title">
@@ -27,7 +37,7 @@ export default class ImageCard extends React.Component {
                         </div>
                     </div>
                 </div>
-            </div>
+            </Button>
         );
     }
 }

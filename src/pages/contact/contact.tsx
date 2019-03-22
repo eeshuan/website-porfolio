@@ -1,10 +1,10 @@
 import React from 'react';
 import Layout from '../layout/layout';
 import ImageCard from '../../components/imageCard/imageCard';
-import { assetsMap } from '../../assets/assetsMap';
+import { Icon } from '@material-ui/core';
+import { contactContent } from '../../pageContents/contact/contactContent';
 
 import './contact.scss';
-import { Icon } from '@material-ui/core';
 
 export default class Contact extends React.Component {
     constructor(public props) {
@@ -16,13 +16,13 @@ export default class Contact extends React.Component {
             <Layout>
                 <div className="contact">
                     <ImageCard 
-                        title="Contact"
-                        subtitle="Lets work together!"
-                        image={assetsMap.pages.contact.image}
+                        title={contactContent.banner.title}
+                        subtitle={contactContent.banner.subtitle}
+                        image={contactContent.banner.image}
                     />
                     <div className="contact-content">
                         <div className="contact-intro">
-                            I am always looking for more opportunities to learn more and go further
+                            {contactContent.intro}
                         </div>
                         <div className="contact-details">
                             <div>
@@ -31,13 +31,13 @@ export default class Contact extends React.Component {
                             <div className="contact-entry">
                                 <Icon className="fas fa-phone"></Icon>
                                 <div style={{marginLeft: "20px"}}>
-                                    (+65) 9677 1627
+                                    {contactContent.contacts.phone}
                                 </div>
                             </div>
                             <div className="contact-entry">
                                 <Icon className="fas fa-envelope"></Icon>
                                 <div style={{marginLeft: "20px"}}>
-                                    <a href="mailto:ngeeshuan@hotmail.com">ngeeshuan@hotmail.com</a>
+                                    <a href={`mailto:${contactContent.contacts.email}`}>{contactContent.contacts.email}</a>
                                 </div>
                             </div>
                         </div>

@@ -23,12 +23,20 @@ export let assetsMap = {
         image6: `${root}/purgastory/pic5.jpeg`,
     },
     pages: {
-        portfolio: `${root}/pages/portfolio.png`,
+        home: {
+            image:`${root}/pages/home/image.png`,
+        },
         about: {
             image: `${root}/pages/about/image.png`,
             profile: `${root}/pages/about/profile.jpeg`,
             image1: `${root}/pages/about/pic1.jpeg`,
             image2: `${root}/pages/about/pic2.jpeg`,
+        },
+        portfolio: {
+            image: `${root}/pages/portfolio/image.png`,
+        },
+        resume: {
+            image: `${root}/pages/resume/image.png`,
         },
         contact: {
             image: `${root}/pages/contact/image.png`,

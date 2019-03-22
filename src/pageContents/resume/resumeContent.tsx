@@ -1,4 +1,11 @@
+import { assetsMap } from "../../assets/assetsMap";
+
 export let resumeContent = {
+    banner: {
+        title: "My Resume",
+        subtitle: "What I can do",
+        image: assetsMap.pages.resume.image
+    },
     skills: {
         programming: [
             "ReactJS and React-Native",
