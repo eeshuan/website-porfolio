@@ -18,17 +18,17 @@ export let aboutContent = {
             profilePic: assetsMap.pages.about.profile,
             info: [
                 `My path as a developer had exposed me to many different areas in both Front-End and Back-End programming. 
-                I enjoyed challenging myself, and have been always contantly upgrading myself with new knowledge.`,
+                I enjoyed challenging myself and have been always contantly upgrading myself with new knowledge.`,
                 `However, this path have not been the kindest to me, and I had faced many obstacles during my learning phases. 
-                However, I persisted on to face these challenges, and little by little, it made me a more knowledgeable person for every obstacle i overcame.`,
-                `But to keep it simple, I love what I am doing now and I am comitted to face any challenges that I might encounter in the future.`
+                However, I persisted on to face these challenges. Little by little, it made me a more knowledgeable person with every obstacle i overcame.`,
+                `But to keep it simple, I love what I am doing now and I am committed to face any challenges that I might encounter in the future.`
             ]
         },
         projects: {
             title: "Developing my own projects",
             info: [
-                `The first game project I developed was Purgastory. It was a defining project for me as I became interested to do my own projects right after. 
-                Watching my ideas and designs come to life really excites me, and it keeps me motivated to do even more.`,
+                `The first game project I developed was Purgastory. It was a defining project for me as it made me realize the joy in developing my own projects. 
+                Watching my ideas and designs come to life really excites me and it keeps me motivated to do even more.`,
                 `Since then, I continued to work tirelessly on my projects, no matter what the project scale is. 
                 There was never a moment to waste to create the things I love.`
             ],

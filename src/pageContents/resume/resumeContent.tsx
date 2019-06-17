@@ -21,16 +21,24 @@ export let resumeContent = {
             "PixiJS, PhaserJS"
         ],
         others: [
-            "Telecom Skills",
+            "Telecommunications Skills",
             "Customer Service",
-            "Event Management"
+            "Events Management"
         ]
     },
     work: [
         {
+            company: "ST Engineering Electronics, Singapore",
+            position: "Software Engineer",
+            duration: "June 2019 - PRESENT",
+            details: [
+                "Help to develop and maintain the UI/UX of a live system"
+            ]
+        },
+        {
             company: "Autumn Interactive Pte Ltd, Singapore",
             position: "Software Developer",
-            duration: "May 2018 - PRESENT",
+            duration: "May 2018 - June 2019",
             details: [
                 "Led the team in the creation of mini games for the company",
                 "In charge of maximizing the UI/UX experience for the products",

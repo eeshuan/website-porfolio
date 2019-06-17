@@ -7,7 +7,7 @@ export let angryPigContent = {
         {
             type: "paragraph",
             data: `Angry Angry Pig started when I was introduced to #gameoff2018 (hosted by GitHub) from my colleague. 
-            It was a 30days game jam event, in which participants have to create a new game based on the given theme.`
+            It was a 30 days game jam event in which participants have to create a new game based on the given theme.`
         },
         {
             type: "paragraph",
