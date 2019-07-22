@@ -32,7 +32,9 @@ export let resumeContent = {
             position: "Software Engineer",
             duration: "June 2019 - PRESENT",
             details: [
-                "Help to develop and maintain the UI/UX of a live system"
+                "Helped to maintain the code of a large scale operating system",
+                "Contributed in handling client's requests for features",
+                "Improved UX and performance of the system"
             ]
         },
         {
