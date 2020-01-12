@@ -11,9 +11,11 @@ export let resumeContent = {
             "ReactJS and React-Native",
             "HTML, Webpack",
             "CSS, SASS/SCSS",
-            "GIT, IDE, NodeJS, MongoDB",
+            "GIT, IDE, NodeJS",
+            "SQL, MongoDB",
             "JavaScript, TypeScript",
-            "C, C++, C#, Java"
+            "C, C++, C#, Java",
+            "WPF .Net Framework"
         ],
         gameDev: [
             "Unreal Engine 4, Unity 2D/3D",
@@ -33,8 +35,10 @@ export let resumeContent = {
             duration: "June 2019 - PRESENT",
             details: [
                 "Helped to maintain the code of a large scale operating system",
-                "Contributed in handling client's requests for features",
-                "Improved UX and performance of the system"
+                "Contributed in handling client’s request for features",
+                "Optimized processes and improve UI/UX",
+                "Handled and processed large data sets for the systems",
+                "Provided support in User Acceptance Testing"
             ]
         },
         {
